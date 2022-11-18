@@ -1,1 +1,65 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    overflow: initial;
+}
 
+.grid {
+    display: grid;
+    background-color: #2a2927;
+    grid-template-columns: 100px [main-start] 80% [main-end] 20%;
+    grid-template-rows: 100px [main-start] 150px 100px[main-end] 20%;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* --------------- INDEX ---------------- */
+
+
+h2 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    grid-row-start: 1;
+    grid-row-start: 2;
+    
+    font-size: 40px;
+    font-variant: small-caps;
+    transform: translate(50px, 50px);
+}
+
+h2 a:is(:link, :visited) {
+    /* inside */
+    text-decoration: none;
+    border-color: black 1px;
+    color: brown;
+    text-shadow: black 1px 1px 3px;
+    /* outside */
+    background-color: white;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+h2 a:hover  {
+    /* inside */
+    color: white;
+    text-shadow: lemonchiffon 1px 1px 5px;
+     /* outside */
+    background-color: black;
+}
+
+/* มั่ยติดงง */
+h2 a:active{
+    transform: scale(1.5);
+    transition-duration: .5s;
+}
