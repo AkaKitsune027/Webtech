@@ -1,16 +1,19 @@
+/* --------------- BASIC SETTING PAGES ---------------- */
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    overflow: initial;
+    overflow: hidden visible;
+    background-color: #2a2927;
 }
 
 .grid {
     display: grid;
-    background-color: #2a2927;
-    grid-template-columns: 100px [main-start] 80% [main-end] 20%;
-    grid-template-rows: 100px [main-start] 150px 100px[main-end] 20%;
+    /* background-color: #2a2927; */
+    grid-template-columns: 350px [main-start] 350px [main-end] 50vh;
+    grid-template-rows: 40px [main-start] 300px 100px[main-end] 20vw;
 }
 
 .box {
@@ -18,48 +21,164 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    justify-items: center;
 }
 
 
 
-/* --------------- INDEX ---------------- */
+/* --------------- INDEX (Landing page) ---------------- */
 
 
 h2 {
-    display: grid;
-    grid-column-start: 2;
+    /* grid-column-start: 1;
     grid-column-end: 3;
     
-    grid-row-start: 1;
-    grid-row-start: 2;
-    
-    font-size: 40px;
+    grid-row-start: 3;
+    grid-row-end: 5;
+     */
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
     font-variant: small-caps;
     transform: translate(50px, 50px);
+    display: inline;
+    
 }
 
-h2 a:is(:link, :visited) {
+h2 a:is(:link, :visited){
     /* inside */
     text-decoration: none;
-    border-color: black 1px;
-    color: brown;
-    text-shadow: black 1px 1px 3px;
+    color: rgb(255, 255, 255);
+    text-shadow: white 1px 1px 5px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(100, 130, 200), rgb(0, 0, 50));
     /* outside */
-    background-color: white;
     padding: 15px;
     border-radius: 10%;
+    transition: translateX(100px) .5s;
 }
 
-h2 a:hover  {
+h2  a:hover{
     /* inside */
     color: white;
-    text-shadow: lemonchiffon 1px 1px 5px;
+    text-shadow: rgb(255, 255, 148) 1px 1px 10px;
      /* outside */
-    background-color: black;
-}
+     /* background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255,)); */
+     /* background: rgb(255,255,255);
+     background: linear-gradient(0deg, rgba(255,255,255,0.6096813725490196) 17%, rgba(164,164,164,0.6797093837535014) 60%, rgba(0,15,60,0.8897934173669468) 90%);  */
+     
+     background: rgb(0,15,60);
+     background: linear-gradient(180deg, rgba(0,15,60,0.8561799719887955) 23%, rgba(12,27,70,0.7329306722689075) 44%, rgba(205,208,226,1) 96%, rgba(255,255,255,0.6096813725490196) 100%);
+     transform: scale(1.5);
+    
+    }
 
-/* มั่ยติดงง */
-h2 a:active{
-    transform: scale(1.5);
+h2  a:active{
     transition-duration: .5s;
 }
+
+img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+/* --------------- ROOM ---------------- */
+
+ul{
+    overflow: hidden;
+}
+li{
+    float: left;
+    justify-content: space-around;
+}
+
+li a{
+    display: block;
+    padding: 5px;
+}
+
+nav ul,li a{
+    text-decoration: none;
+    color: black;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
+
+}
+
+nav ul,li a:is(:hover, :visited){
+    color:white;
+    background-color:black;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+/* --------------- PROFILE ---------------- */
+
+ul,li{
+    background-color: black;
+    list-style-type: none;
+}
+
+nav ul,li a{
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 25px;
+    text-decoration: none;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
+
+}
+
+nav ul,li a:is(:hover, :visited){
+    color:white;
+    background-color:black;
+}
+
+h1 {
+    color:coral;
+    text-shadow: black 1px 0px 2px;
+}
+
+
+#me {
+    box-shadow: black 3px 3px 4px;;
+    border-radius: 50%;
+}
+
+#Information {
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15%;
+    justify-content: center;
+    padding: 1em;
+    width: 450px;
+    height: 720px;
+       
+    position: relative;
+    animation: mymove 5s infinite alternate;
+    animation-delay:  1s;
+      
+}
+
+@keyframes mymove {
+    from {top: 0px;
+    }
+    to {top: 10px;
+    }
+    
+}
+
+
+/* --------------- DIARY ---------------- */
