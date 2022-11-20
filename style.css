@@ -28,7 +28,9 @@ body {
 
 /* --------------- INDEX (Landing page) ---------------- */
 
-
+.box h2 *{
+    overflow:hidden;
+}
 h2 {
     /* grid-column-start: 1;
     grid-column-end: 3;
@@ -40,8 +42,7 @@ h2 {
     justify-content: center;
     font-size: 30px;
     font-variant: small-caps;
-    transform: translate(50px, 50px);
-    display: inline;
+    transform: translate(-11.5em, 16em);
     
 }
 
@@ -50,85 +51,108 @@ h2 a:is(:link, :visited){
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: white 1px 1px 5px;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(100, 130, 200), rgb(0, 0, 50));
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
+    background: black;
     /* outside */
-    padding: 15px;
-    border-radius: 10%;
-    transition: translateX(100px) .5s;
+    padding: 1.7vw;
+    
+    border-radius: 15%;
+
+    /* mai tid */
+    transition: all 1s;
+    
+
 }
 
 h2  a:hover{
     /* inside */
     color: white;
     text-shadow: rgb(255, 255, 148) 1px 1px 10px;
-     /* outside */
-     /* background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255,)); */
-     /* background: rgb(255,255,255);
-     background: linear-gradient(0deg, rgba(255,255,255,0.6096813725490196) 17%, rgba(164,164,164,0.6797093837535014) 60%, rgba(0,15,60,0.8897934173669468) 90%);  */
-     
-     background: rgb(0,15,60);
+     /* outside */ 
+     /* background: rgb(0,15,60); */
      background: linear-gradient(180deg, rgba(0,15,60,0.8561799719887955) 23%, rgba(12,27,70,0.7329306722689075) 44%, rgba(205,208,226,1) 96%, rgba(255,255,255,0.6096813725490196) 100%);
-     transform: scale(1.5);
-    
     }
 
 h2  a:active{
-    transition-duration: .5s;
+    transform: scale(0.8);
 }
 
 img {
-    grid-column-start: 1;
+    transform: translate(3.7em, 5em) ;
+    /* grid-column-start: 1;
     grid-column-end: 2;
     
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 5; */
 }
 
 
 /* --------------- ROOM ---------------- */
 
-ul{
-    overflow: hidden;
-}
-li{
+nav li a{
     float: left;
-    justify-content: space-around;
-}
-
-li a{
+    padding: 3vh;
     display: block;
-    padding: 5px;
+    color: black;
+    background-color:#dce4e6;
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
 }
 
-nav ul,li a{
+nav li a:is(:link, :visited){
+    
     text-decoration: none;
     color: black;
-    background-color:white;
+    background-color: #dce4e6;
     text-align: center;
-    justify-content: center;
-
+    text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
+    transition: .25s;
 }
 
-nav ul,li a:is(:hover, :visited){
-    color:white;
-    background-color:black;
-
+nav li a:is(:hover){
+    color: white;
+    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    background-color: black;
+/* 
     grid-column-start: 1;
     grid-column-end: 2;
     
     grid-row-start: 3;
     grid-row-end: 5;
+
+*/
+}
+
+nav li a:active{
+    transform: scale(0.8);
+}
+
+#whitepaper {
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 25%;
+    transform: translate(-8.5em, 10em)
+}
+
+.circle {
+    width: 3vw;
+    height: 3vw;
+    /* border: ; */
 }
 
 
 /* --------------- PROFILE ---------------- */
 
-ul,li{
+nav li{
+    float: left;
+}
+
+nav#profile ul,li{
     background-color: black;
     list-style-type: none;
 }
 
-nav ul,li a{
+nav#profile ul,li a{
     display: inline-flex;
     justify-content: space-between;
     font-size: 25px;
@@ -139,7 +163,7 @@ nav ul,li a{
 
 }
 
-nav ul,li a:is(:hover, :visited){
+nav#profile ul,li a:is(:hover, :visited){
     color:white;
     background-color:black;
 }
