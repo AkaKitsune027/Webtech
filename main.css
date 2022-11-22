@@ -1,0 +1,59 @@
+/* --------------- INDEX (Landing page) ---------------- */
+
+.box h2 *{
+    overflow:hidden;
+}
+h2 {
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    
+    grid-row-start: 3;
+    grid-row-end: 5;
+     */
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    font-variant: small-caps;
+    transform: translate(-11.5em, 16em);
+    
+}
+
+h2 a:is(:link, :visited){
+    /* inside */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: white 1px 1px 5px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
+    background: black;
+    /* outside */
+    padding: 1.7vw;
+    
+    border-radius: 15%;
+
+    /* mai tid */
+    transition: all 1s;
+    
+
+}
+
+h2  a:hover{
+    /* inside */
+    color: white;
+    text-shadow: rgb(255, 255, 148) 1px 1px 10px;
+     /* outside */ 
+     /* background: rgb(0,15,60); */
+    background: linear-gradient(180deg, rgba(0,15,60,0.8561799719887955) 23%, rgba(12,27,70,0.7329306722689075) 44%, rgba(205,208,226,1) 96%, rgba(255,255,255,0.6096813725490196) 100%);
+}
+
+h2  a:active{
+    transform: scale(0.8);
+}
+
+img {
+    transform: translate(3.7em, 5em) ;
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 3;
+    grid-row-end: 5; */
+}
