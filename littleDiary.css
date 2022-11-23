@@ -1,0 +1,27 @@
+/* --------------- BASIC SETTING PAGES ---------------- */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    overflow: hidden visible;
+    background-color: #2a2927;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 350px [main-start] 350px [main-end] 50vh;
+    grid-template-rows: 40px [main-start] 300px 100px[main-end] 20vw;
+} */
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+     /* align-items: center; */
+    /* flex-direction: row;  */
+}
+
+/* ---------- lITTLE DIARY ------------- */
