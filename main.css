@@ -7,15 +7,31 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow";
   overflow: visible;
   background-color: #2a2927;
+  display: block;
 }
 
 .container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 3fr) 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 
 .div1 {
   grid-area: 1 / 1 / 2 / 4;
@@ -33,14 +49,23 @@ body {
     grid-area: 3 / 1 / 4 / 4;
   }
 
+
+
+
+
   /* --------- INDEX ZONE ------------- */
 
-h2 {
+  .div3 img {
+    margin: auto;
+  }
+
+  .div3 h2 {
+  margin: 0;
   align-content: center;
   justify-content: center;
   font-size: 30px;
   font-variant: small-caps;
-  transform: translate(-11.5em, 16em);
+  text-align: center;
 }
 
 h2 a:is(:link, :visited) {
@@ -52,31 +77,9 @@ h2 a:is(:link, :visited) {
   background: black;
   /* outside */
   padding: 1.7vw;
-}
-
-h2 {
-  align-content: center;
-  justify-content: center;
-  font-size: 30px;
-  font-variant: small-caps;
-  transform: translate(-11.5em, 16em);
-}
-
-h2 a:is(:link, :visited) {
-  /* inside */
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-shadow: white 1px 1px 5px;
-  box-shadow: rgb(0, 0, 0) 1px 1px 7px;
-  background: black;
-  /* outside */
-  padding: 1.7vw;
-
   border-radius: 15%;
-
-  /* mai tid */
-  transition: all 1s;
 }
+
 
 h2 a:hover {
   /* inside */
@@ -114,13 +117,4 @@ h2 a:hover {
 
 h2 a:active {
   transform: scale(0.8);
-}
-
-.box {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* flex-direction: row;  */
 }
