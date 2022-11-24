@@ -12,13 +12,6 @@ body {
 
 
 
-.box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -33,10 +26,10 @@ body {
     grid-row-gap: 0px;
   }
   
-  .div1 {
+    .div1 {
     grid-area: 1 / 1 / 2 / 4;
-  }
-  .div2 {
+     }
+    .div2 {
     grid-area: 2 / 1 / 3 / 2;
     }
     .div3 {
@@ -60,20 +53,27 @@ body {
 
 /* --------------- PROFILE ---------------- */
 
-nav#profile {
-   
-}
-nav#profile li {
-    float: left;
-    padding: 3vh;
-    display: block;
-    color: black;
-    background-color:#dce4e6;
-    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
-    transform: translate(100px, 100px);
+nav {
+    margin: 0;
+
 }
 
-nav#profile li a:is(:link, :visited){
+nav#profile li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+}
+
+nav#profile li {
+    
+    padding: 3vh;
+    display: block;
+    background-color:#dce4e6; 
+     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
+   
+}
+
+nav#profile li:is(:link, :visited){
     text-decoration: none;
     color: black;
     background-color: #dce4e6;
@@ -82,13 +82,13 @@ nav#profile li a:is(:link, :visited){
     transition: .25s;
 }
 
-nav#profile li a:is(:hover){
+nav#profile li:hover{
     color: white;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
     background-color: black;
 }
 
-nav#profile li a:active{
+nav#profile li:active{
     transform: scale(0.8);
 }
 
