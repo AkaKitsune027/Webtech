@@ -15,8 +15,6 @@ body {
 .box {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
 .container {
@@ -61,10 +59,11 @@ body {
 
 nav#room{
     margin: 0;
+    font-size: 1vw;
 }
 
 nav#room li{
-    padding: 3vh;
+    /* padding: 3vh; */
     display: block;
     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
 }
@@ -75,22 +74,23 @@ nav#room li a{
     text-decoration: none;
     color: black;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    background-color: #dce4e6;
     text-align: center;
 }
 
-nav#room li,a:is(:link, :visited){
+nav#room li:is(:link, :visited){
     text-decoration: none;
     color: black;
     background-color: #dce4e6;
     text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
     transition: .25s;
-}
+} 
 
-nav#room li,a:hover{
+nav#room li:hover{
     color: white;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-    background-color: black;
-}
+    background-color: black; 
+} 
 
 nav#room li:active{
     transform: scale(0.8);
@@ -135,6 +135,9 @@ nav#room a:hover{
     background-color: rgb(204, 150, 0) ;
 }
 
+h3.text{
+    font-size: 2vw;
+}
 
 h3.text a{
 

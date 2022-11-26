@@ -109,11 +109,8 @@ nav#room a:hover{
 
 }
 
-.memo1 {
-    width: 20%;
-    height: 20%;
-    background-color: bisque;
-    flex-direction:row;
+.memo1 a{
+    /* background-color: bisque; */
     box-shadow: white 1px 1px 5px;
 }
 
