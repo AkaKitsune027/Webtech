@@ -57,9 +57,7 @@ nav#mood li {
   }
   
   nav#mood li,a{
-    padding: 1vh;
-    width: 10vw;
-    height: 10vh;
+    padding: 2vh;
     border-radius: 20%;
     text-decoration: none;
     color: black;
