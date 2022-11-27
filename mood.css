@@ -16,6 +16,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+
 }
 
 .grid {
@@ -27,14 +28,16 @@ body {
 }
 
 .div1 {
-  grid-area: 1 / 1 / 2 / 2;
-  width: 95vw;
+  grid-area: 1 / 2 / 2 / 2;
 }
 .div2 {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: 2 / 2 / 3 / 2;
 }
 .div3 {
-  grid-area: 3 / 1 / 4 / 2;
+  grid-area: 3 / 2 / 4 / 2;
+  background-color: #3f6cac;
+  width: 50%;
+  height: 20%;
 }
 
 .box {
@@ -45,18 +48,44 @@ body {
 /* --------------- DIARY ---------------- */
 
 nav#mood {
-  margin: 0;
-  display: block;
-  font-weight: 600;
+  margin-top: 2vw;
 }
 
-nav#mood a {
-    
+#whitepaperMood{
+    display: flex;
+    width: 70vw;
+    height: 75vh;
+    background-color: rgb(192, 194, 225);
+    box-shadow: #082f66 0.5em 0.5em 1em;
+    border-radius: 20%;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.moonMood{
+    text-align: center;
+
+}
+
+.moonMood > h2{
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+}
+
+div > h2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(37, 0, 200);
+    text-shadow: 0em 0em 0.3em rgb(11, 4, 30);
+
 }
 
 nav#mood li {
-  padding: 3vh;
-  display: block;
+  display: inline;
   box-shadow: rgb(0, 0, 0) 1px 1px 7px;
 }
 

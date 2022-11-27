@@ -45,6 +45,9 @@ body {
     }
     .div5 {
     grid-area: 3 / 1 / 4 / 4;
+    color: brown;
+    width: 100%;
+    height: 100%;
     }
   
   
@@ -63,9 +66,14 @@ nav#room{
 }
 
 nav#room li{
-    /* padding: 3vh; */
-    display: block;
+    display: inline;
+    align-items: center;
     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
+}
+
+nav#room a{
+    display: flex;
+    flex-flow: column;;
 }
 
 
@@ -92,7 +100,7 @@ nav#room li:hover{
     background-color: black; 
 } 
 
-nav#room li:active{
+nav#room li,a:active{
     transform: scale(0.8);
 }
 
