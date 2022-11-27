@@ -45,9 +45,6 @@ body {
     }
     .div5 {
     grid-area: 3 / 1 / 4 / 4;
-    color: brown;
-    width: 100%;
-    height: 100%;
     }
   
   
@@ -57,57 +54,56 @@ body {
     display: flex;
     justify-content: center;
   }
-  
-/* --------------- ROOM ---------------- */
+  /* --------------- MENU --------------- */
 
-nav#room{
+  nav#room{
     margin: 0;
     font-size: 1vw;
 }
 
 nav#room li{
     display: inline;
-    align-items: center;
     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
 }
 
 nav#room a{
     display: flex;
-    flex-flow: column;;
+    flex-flow: column;
 }
 
 
 nav#room li a{
-    padding: 3vh;
+    padding: 1vh;
+    width: 9vw;
+    height: 6vh;
     text-decoration: none;
-    color: black;
-    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    color: rgb(48, 48, 48);
+    text-shadow: rgb(154, 154, 154) 1px 1px 5px;
     background-color: #dce4e6;
     text-align: center;
 }
 
-nav#room li:is(:link, :visited){
+nav#room li,a:is(:link, :visited){
     text-decoration: none;
-    color: black;
+    color: rgb(48, 48, 48);
     background-color: #dce4e6;
     text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
     transition: .25s;
 } 
 
-nav#room li:hover{
-    color: white;
-    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-    background-color: black; 
-} 
+nav#room a:hover{
+    color:  rgb(220, 217, 240);
+    background-color: rgb(20, 20, 20);
+}
 
 nav#room li,a:active{
     transform: scale(0.8);
 }
 
-nav#room a:hover{
-    color: white;
-    background-color: black;
-}
+
+  
+/* --------------- ROOM ---------------- */
+
 
 #whitepaper{
     width: 70vw;

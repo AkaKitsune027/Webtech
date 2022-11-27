@@ -57,8 +57,10 @@ nav#mood li {
     box-shadow: rgb(0, 0, 0) 1px 1px 7px;
   }
   
-  nav#mood li a {
-    padding: 3vh;
+  nav#mood li,a{
+    padding: 1vh;
+    width: 10vw;
+    height: 10vh;
     border-radius: 30%;
     text-decoration: none;
     color: black;
@@ -66,28 +68,21 @@ nav#mood li {
     text-align: center;
   }
   
-  nav#mood li,
+  nav#mood 
   a:is(:link, :visited) {
     text-decoration: none;
-    color: black;
+    color: rgb(48, 48, 48);
     background-color: #dce4e6;
     text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
     transition: 0.25s;
   }
   
-  nav#mood li,
-  a:hover {
-    color: white;
-    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-    background-color: black;
-  }
-  
-  nav#mood li:active {
+  nav#mood li,a:active {
     transform: scale(0.8);
   }
   
   nav#mood a:hover {
-    color: white;
+    color:  rgb(220, 217, 240);;
     background-color: black;
   }
 

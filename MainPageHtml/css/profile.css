@@ -46,58 +46,53 @@ body {
   }
   
 
-/* --------------- PROFILE ---------------- */
+  /* --------------- MENU ---------------- */
 
-nav#profile{
+  nav#profile{
     margin: 0;
     font-size: 1vw;
 }
 
 nav#profile li{
     display: inline;
-    align-items: center;
     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
 }
 
 nav#profile a{
     display: flex;
-    flex-flow: column;;
+    flex-flow: column;
 }
 
 
 nav#profile li a{
-    padding: 3vh;
+    padding: 1vh;
+    width: 9vw;
+    height: 6vh;
     text-decoration: none;
-    color: black;
-    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    color: rgb(48, 48, 48);
+    text-shadow: rgb(154, 154, 154) 1px 1px 5px;
     background-color: #dce4e6;
     text-align: center;
 }
 
-nav#profile li:is(:link, :visited){
+nav#profile li,a:is(:link, :visited){
     text-decoration: none;
-    color: black;
+    color: rgb(48, 48, 48);
     background-color: #dce4e6;
     text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
     transition: .25s;
 } 
 
-nav#profile li:hover{
-    color: white;
-    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-    background-color: black; 
-} 
+nav#profile a:hover{
+    color:  rgb(220, 217, 240);
+    background-color: rgb(20, 20, 20);
+}
 
 nav#profile li,a:active{
     transform: scale(0.8);
 }
 
-nav#profile a:hover{
-    color: white;
-    background-color: black;
-}
-
-
+/* --------------- PROFILE ---------------- */
 
 
 h1 {
