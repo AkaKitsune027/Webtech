@@ -48,72 +48,83 @@ body {
 
 /* --------------- PROFILE ---------------- */
 
-nav {
+nav#profile{
     margin: 0;
-    text-align: center;
+    font-size: 1vw;
 }
 
+nav#profile li{
+    display: inline;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
+}
+
+nav#profile a{
+    display: flex;
+    flex-flow: column;;
+}
+
+
 nav#profile li a{
+    padding: 3vh;
     text-decoration: none;
     color: black;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-}
-
-nav#profile li {
-    width:10vw;
-    height: 3vw;
-    /* padding: 3vh; */
-    display: block;
-    background-color:#dce4e6; 
-     box-shadow: rgb(0, 0, 0) 1px 1px 7px; 
-   
+    background-color: #dce4e6;
+    text-align: center;
 }
 
 nav#profile li:is(:link, :visited){
     text-decoration: none;
     color: black;
     background-color: #dce4e6;
-    text-align: center;
     text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
     transition: .25s;
-}
+} 
 
 nav#profile li:hover{
     color: white;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-    background-color: black;
+    background-color: black; 
+} 
+
+nav#profile li,a:active{
+    transform: scale(0.8);
 }
 
-nav#profile li:active{
-    transform: scale(0.8);
+nav#profile a:hover{
+    color: white;
+    background-color: black;
 }
 
 
 
 
 h1 {
-    color:coral;
-    text-shadow: black 1px 0px 2px;
+    color:rgb(152, 121, 255);
+    text-shadow: rgba(156, 0, 199, 0.559) 1px 1px 5px;
     text-align: center;
 }
 
 
 #me {
-    box-shadow: black 3px 3px 4px;;
+    width: 35%;
+    height: auto;
+    box-shadow: black 3px 3px 4px;
     border-radius: 50%;
-    transform: translate(50px, 50px);
+    transform: translate(5em, 2em);
 }
 
 #Information {
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 1em;
     text-align: left;
-    background-color: white;
+    background-color: rgba(134, 126, 255, 0.353);
     border-radius: 15%;
     justify-content: center;
     padding: 1em;
-    width: 800px;
-    height: 500px;
+    width: 55vw;
+    height: 35vw;
     transform: translate(-35px, 120px);
     
     position: relative;
@@ -130,12 +141,15 @@ h1 {
 }
 
 h3 {
-    transform: translate(450px, -250px);
+    font-size: 1em;
+    color: rgb(210, 133, 255);
+    text-shadow: 1px 1px 3px rgba(75, 120, 233, 0.559) ;
+    transform: translate(450px, -270px);
 }
 
 .social {
-    transform: translate(55%, -400%);
+    transform: translate(55%, -370%);
 }
 .social a {
-    color: white;
+    text-decoration: none;
 }

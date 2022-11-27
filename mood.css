@@ -45,79 +45,100 @@ body {
   height: 100vh;
 }
 
-/* --------------- DIARY ---------------- */
+
+/* ---------------- MENU ---------------- */
 
 nav#mood {
-  margin-top: 2vw;
-}
+    margin-top: 2vw;
+  }
+
+nav#mood li {
+    display: inline;
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
+  }
+  
+  nav#mood li a {
+    padding: 3vh;
+    border-radius: 30%;
+    text-decoration: none;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    text-align: center;
+  }
+  
+  nav#mood li,
+  a:is(:link, :visited) {
+    text-decoration: none;
+    color: black;
+    background-color: #dce4e6;
+    text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
+    transition: 0.25s;
+  }
+  
+  nav#mood li,
+  a:hover {
+    color: white;
+    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    background-color: black;
+  }
+  
+  nav#mood li:active {
+    transform: scale(0.8);
+  }
+  
+  nav#mood a:hover {
+    color: white;
+    background-color: black;
+  }
+
+
+
+/* --------------- MOOD ---------------- */
+
 
 #whitepaperMood{
     display: flex;
     width: 70vw;
     height: 75vh;
-    background-color: rgb(192, 194, 225);
+    background-color: rgb(117, 120, 153);
     box-shadow: #082f66 0.5em 0.5em 1em;
     border-radius: 20%;
     margin-left: 5em;
     margin-bottom: 1em;
 }
 
-.moonMood{
+.div2 > h2 {
+    font-weight: 700;
+    font-size: 3vw;
     text-align: center;
+    margin-left: 3em;
+    color: rgb(99, 75, 208);
+    text-shadow: 0em 0em 0.3em rgb(13, 0, 70);
+}
 
+.moonMood{
+    width: 70vw;
+    height: auto;
 }
 
 .moonMood > h2{
-    color: black;
+    margin-top: 1.3em;
+    color: rgb(41, 22, 180);
+    text-shadow: #a5b6cd 0em 0em 0.2em;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
-div > h2 {
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    font-size: 3vw;
+.square{
+    width: 1.2em;
+    height: 1.2em;
+    background-color: rgba(219, 170, 47, 0.632);
+    border-radius: 25%;
+    box-shadow: 0.3em 0.3em 0.2em #455d80;
+    font-size: 2.3em;
+    color: rgb(155, 67, 0);
+    text-shadow: 0em 0em 0.1em rgb(255, 233, 200);
     text-align: center;
-    color: rgb(37, 0, 200);
-    text-shadow: 0em 0em 0.3em rgb(11, 4, 30);
-
+    transform: translate(12em, 0em);
 }
 
-nav#mood li {
-  display: inline;
-  box-shadow: rgb(0, 0, 0) 1px 1px 7px;
-}
-
-nav#mood li a {
-  padding: 3vh;
-  text-decoration: none;
-  color: black;
-  text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-  text-align: center;
-}
-
-nav#mood li,
-a:is(:link, :visited) {
-  text-decoration: none;
-  color: black;
-  background-color: #dce4e6;
-  text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
-  transition: 0.25s;
-}
-
-nav#mood li,
-a:hover {
-  color: white;
-  text-shadow: rgb(255, 255, 255) 1px 1px 5px;
-  background-color: black;
-}
-
-nav#mood li:active {
-  transform: scale(0.8);
-}
-
-nav#mood a:hover {
-  color: white;
-  background-color: black;
-}
