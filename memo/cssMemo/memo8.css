@@ -42,15 +42,15 @@ body {
 
 /* ---------------- MENU ---------------- */
 
-nav#memo15 {
+nav#memo8 {
   margin-top: 2vw;
 }
 
-nav#memo15 li {
+nav#memo8 li {
   display: inline;
 }
 
-nav#memo15 li,
+nav#memo8 li,
 a {
   padding: 1vh;
   width: 10vw;
@@ -62,7 +62,7 @@ a {
   text-align: center;
 }
 
-nav#memo15 a:is(:link, :visited) {
+nav#memo8 a:is(:link, :visited) {
   text-decoration: none;
   color: rgb(48, 48, 48);
   background-color: #dce4e6;
@@ -70,22 +70,22 @@ nav#memo15 a:is(:link, :visited) {
   transition: 0.25s;
 }
 
-nav#memo15 li,
+nav#memo8 li,
 a:active {
   transform: scale(0.8);
 }
-nav#memo15 a {
+nav#memo8 a {
   box-shadow: rgb(170, 181, 102) 0.1em 0.4em 0.6em;
 }
 
-nav#memo15 a:hover {
+nav#memo8 a:hover {
   color: rgb(220, 217, 240);
   background-color: black;
 }
 
 /* --------------- Memo1 ---------------- */
 
-#whitepaperMemo15 {
+#whitepaperMemo8 {
   display: flex;
   width: 50vw;
   height: 70vh;
@@ -109,21 +109,18 @@ h2 {
 
 .content > h3 {
 
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 85%;
   height: 70%;
 
 }
 
-h3#memo15 {
+h3#memo8 {
   background-color: transparent;
   margin-left: 5em;
   text-align: left;
   font-size: 0.9em;
   font-weight: 500;
-  /* width: 70%;
-  height: 20%; */
-  /* overflow-y: scroll; */
 }
 
 ::-webkit-scrollbar {
@@ -143,31 +140,24 @@ h3#memo15 {
 
 
 
-.flex{
-  display: inline-flex;
-}
-.Back {
-  color: rgb(0, 111, 185);
-  font-size: 2.5em;
-  font-weight: 600;
-  transform: translate(0.2em, 3em);
-}
-
-.Back + img {
-  position: absolute;
-  z-index: -1;
-  transform: translate(-2.7em, 1em);
-}
-
-.Next {
-  color: rgb(0, 111, 185);
-  font-size: 2.5em;
-  font-weight: 600;
-  transform: translate(15em, -4em);
-}
-
-.Next + img{
-  position: absolute;
-  z-index: -1;
-  transform: translate(50em, -10em);
-}
+.Back a:link,a:visited{
+    color: rgb(0, 111, 185);
+    font-size: 2.5em;
+    font-weight: 600;
+    transform: translate(10em, 11em);
+  }
+  
+  .Back a:hover{color:rgb(197, 98, 45);
+  }
+  
+  
+  .Next a:link,a:visited{
+    color: rgb(0, 111, 185);
+    font-size: 2.5em;
+    font-weight: 600;
+    transform: translate(5em, -10em);
+  }
+  
+  .Next a:hover{color:rgb(197, 98, 45);
+  }
+  

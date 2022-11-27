@@ -42,15 +42,15 @@ body {
 
 /* ---------------- MENU ---------------- */
 
-nav#memo4 {
+nav#memo2 {
   margin-top: 2vw;
 }
 
-nav#memo4 li {
+nav#memo2 li {
   display: inline;
 }
 
-nav#memo4 li,
+nav#memo2 li,
 a {
   padding: 1vh;
   width: 10vw;
@@ -62,7 +62,7 @@ a {
   text-align: center;
 }
 
-nav#memo4 a:is(:link, :visited) {
+nav#memo2 a:is(:link, :visited) {
   text-decoration: none;
   color: rgb(48, 48, 48);
   background-color: #dce4e6;
@@ -70,22 +70,22 @@ nav#memo4 a:is(:link, :visited) {
   transition: 0.25s;
 }
 
-nav#memo4 li,
+nav#memo2 li,
 a:active {
   transform: scale(0.8);
 }
-nav#memo4 a {
+nav#memo2 a {
   box-shadow: rgb(170, 181, 102) 0.1em 0.4em 0.6em;
 }
 
-nav#memo4 a:hover {
+nav#memo2 a:hover {
   color: rgb(220, 217, 240);
   background-color: black;
 }
 
 /* --------------- Memo1 ---------------- */
 
-#whitepaperMemo4 {
+#whitepaperMemo2 {
   display: flex;
   width: 50vw;
   height: 70vh;
@@ -115,7 +115,7 @@ h2 {
 
 }
 
-h3#memo4 {
+h3#memo2 {
   background-color: transparent;
   margin-left: 5em;
   text-align: left;
@@ -160,4 +160,3 @@ h3#memo4 {
   
   .Next a:hover{color:rgb(197, 98, 45);
   }
-  

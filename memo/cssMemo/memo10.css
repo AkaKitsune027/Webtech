@@ -42,15 +42,15 @@ body {
 
 /* ---------------- MENU ---------------- */
 
-nav#memo4 {
+nav#memo10 {
   margin-top: 2vw;
 }
 
-nav#memo4 li {
+nav#memo10 li {
   display: inline;
 }
 
-nav#memo4 li,
+nav#memo10 li,
 a {
   padding: 1vh;
   width: 10vw;
@@ -62,7 +62,7 @@ a {
   text-align: center;
 }
 
-nav#memo4 a:is(:link, :visited) {
+nav#memo10 a:is(:link, :visited) {
   text-decoration: none;
   color: rgb(48, 48, 48);
   background-color: #dce4e6;
@@ -70,22 +70,22 @@ nav#memo4 a:is(:link, :visited) {
   transition: 0.25s;
 }
 
-nav#memo4 li,
+nav#memo10 li,
 a:active {
   transform: scale(0.8);
 }
-nav#memo4 a {
+nav#memo10 a {
   box-shadow: rgb(170, 181, 102) 0.1em 0.4em 0.6em;
 }
 
-nav#memo4 a:hover {
+nav#memo10 a:hover {
   color: rgb(220, 217, 240);
   background-color: black;
 }
 
 /* --------------- Memo1 ---------------- */
 
-#whitepaperMemo4 {
+#whitepaperMemo10 {
   display: flex;
   width: 50vw;
   height: 70vh;
@@ -115,7 +115,7 @@ h2 {
 
 }
 
-h3#memo4 {
+h3#memo10 {
   background-color: transparent;
   margin-left: 5em;
   text-align: left;
@@ -139,25 +139,24 @@ h3#memo4 {
 }
 
 
-
 .Back a:link,a:visited{
-    color: rgb(0, 111, 185);
-    font-size: 2.5em;
-    font-weight: 600;
-    transform: translate(10em, 11em);
-  }
-  
-  .Back a:hover{color:rgb(197, 98, 45);
-  }
-  
-  
-  .Next a:link,a:visited{
-    color: rgb(0, 111, 185);
-    font-size: 2.5em;
-    font-weight: 600;
-    transform: translate(5em, -10em);
-  }
-  
-  .Next a:hover{color:rgb(197, 98, 45);
-  }
-  
+  color: rgb(0, 111, 185);
+  font-size: 2.5em;
+  font-weight: 600;
+  transform: translate(10em, 11em);
+}
+
+.Back a:hover{color:rgb(197, 98, 45);
+}
+
+
+.Next a:link,a:visited{
+  color: rgb(0, 111, 185);
+  font-size: 2.5em;
+  font-weight: 600;
+  transform: translate(5em, -10em);
+}
+
+.Next a:hover{color:rgb(197, 98, 45);
+}
+
