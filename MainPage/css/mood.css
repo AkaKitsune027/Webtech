@@ -54,14 +54,13 @@ nav#mood {
 
 nav#mood li {
     display: inline;
-    box-shadow: rgb(0, 0, 0) 1px 1px 7px;
   }
   
   nav#mood li,a{
     padding: 1vh;
     width: 10vw;
     height: 10vh;
-    border-radius: 30%;
+    border-radius: 20%;
     text-decoration: none;
     color: black;
     text-shadow: rgb(255, 255, 255) 1px 1px 5px;
@@ -80,7 +79,10 @@ nav#mood li {
   nav#mood li,a:active {
     transform: scale(0.8);
   }
-  
+  nav#mood a{
+  box-shadow: rgb(68, 44, 146) 0.1em 0.4em 0.6em;
+  }
+
   nav#mood a:hover {
     color:  rgb(220, 217, 240);;
     background-color: black;
@@ -96,9 +98,9 @@ nav#mood li {
     width: 70vw;
     height: 75vh;
     background-color: rgb(117, 120, 153);
-    box-shadow: #082f66 0.5em 0.5em 1em;
+    box-shadow: #153563 0.5em 0.5em 0.8em;
     border-radius: 20%;
-    margin-left: 5em;
+    margin-left: 0em;
     margin-bottom: 1em;
 }
 
@@ -106,7 +108,6 @@ nav#mood li {
     font-weight: 700;
     font-size: 3vw;
     text-align: center;
-    margin-left: 3em;
     color: rgb(99, 75, 208);
     text-shadow: 0em 0em 0.3em rgb(13, 0, 70);
 }

@@ -20,24 +20,18 @@ body {
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr repeat(1, 3fr) 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: /*1, 3fr,*/ 1, 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
   
-    .div1 {
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
     grid-area: 2 / 1 / 3 / 2;
-    }
-    .div2 {
-    grid-area: 2 / 2 / 3 / 3;
-    }
-    .div3 {
-    grid-area: 2 / 3 / 3 / 4;
-    }
-    .div4 {
-    grid-area: 3 / 1 / 4 / 4;
-    }
+}
   
     
 .box {
@@ -99,6 +93,7 @@ h1 {
     color:rgb(152, 121, 255);
     text-shadow: rgba(156, 0, 199, 0.559) 1px 1px 5px;
     text-align: center;
+    font-size: 2.5em;
 }
 
 
@@ -111,7 +106,7 @@ h1 {
 }
 
 #Information {
-    margin: 0 auto;
+    margin: 0 20em;
     font-size: 1em;
     text-align: left;
     background-color: rgba(134, 126, 255, 0.353);
@@ -120,7 +115,7 @@ h1 {
     padding: 1em;
     width: 55vw;
     height: 35vw;
-    transform: translate(-35px, 120px);
+    
     
     position: relative;
     animation: mymove 5s infinite alternate;
@@ -136,15 +131,15 @@ h1 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: rgb(210, 133, 255);
     text-shadow: 1px 1px 3px rgba(75, 120, 233, 0.559) ;
-    transform: translate(450px, -270px);
+    transform: translate(54%, -11em);
 }
 
 .social {
-    transform: translate(55%, -370%);
+    transform: translate(70%, -200%);
 }
 .social a {
-    text-decoration: none;
+    /* text-decoration: none; */
 }

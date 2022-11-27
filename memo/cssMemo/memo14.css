@@ -1,0 +1,173 @@
+/* --------------- BASIC SETTING PAGES ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Athiti&display=swap");
+
+body {
+  width: 70vw;
+  height: 70vh;
+  margin: 0;
+  font-family: "'Athiti', sans-serif, Franklin Gothic Medium", "Arial Narrow";
+  overflow: visible;
+  background-color: #2a2927;
+  font-size: 1.2vw;
+}
+
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr repeat(1, 3fr) 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 2;
+}
+.div3 {
+  grid-area: 3 / 2 / 4 / 2;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ---------------- MENU ---------------- */
+
+nav#memo15 {
+  margin-top: 2vw;
+}
+
+nav#memo15 li {
+  display: inline;
+}
+
+nav#memo15 li,
+a {
+  padding: 1vh;
+  width: 10vw;
+  height: 10vh;
+  border-radius: 20%;
+  text-decoration: none;
+  color: black;
+  text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+  text-align: center;
+}
+
+nav#memo15 a:is(:link, :visited) {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  background-color: #dce4e6;
+  text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
+  transition: 0.25s;
+}
+
+nav#memo15 li,
+a:active {
+  transform: scale(0.8);
+}
+nav#memo15 a {
+  box-shadow: rgb(170, 181, 102) 0.1em 0.4em 0.6em;
+}
+
+nav#memo15 a:hover {
+  color: rgb(220, 217, 240);
+  background-color: black;
+}
+
+/* --------------- Memo1 ---------------- */
+
+#whitepaperMemo15 {
+  display: flex;
+  width: 50vw;
+  height: 70vh;
+  background-color: rgb(180, 144, 99);
+  box-shadow: #6e6e69 0.5em 0.5em 0.8em;
+  border-radius: 20%;
+  margin-left: 0em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(166, 144, 64);
+  text-shadow: 0em 0em 0.4em #786f5d;
+}
+
+h2 {
+  color: rgb(76, 40, 40);
+  text-align: center;
+}
+
+.content > h3 {
+
+  overflow-y: scroll;
+  width: 85%;
+  height: 70%;
+
+}
+
+h3#memo15 {
+  background-color: transparent;
+  margin-left: 5em;
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: 500;
+  /* width: 70%;
+  height: 20%; */
+  /* overflow-y: scroll; */
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.555);
+  border-radius: 5%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 64, 64);
+  width: 10%;
+  height: 50%;
+}
+
+
+
+.flex{
+  display: inline-flex;
+}
+.Back {
+  color: rgb(0, 111, 185);
+  font-size: 2.5em;
+  font-weight: 600;
+  transform: translate(0.2em, 3em);
+}
+
+.Back + img {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-2.7em, 1em);
+}
+
+.Next {
+  color: rgb(0, 111, 185);
+  font-size: 2.5em;
+  font-weight: 600;
+  transform: translate(15em, -4em);
+}
+
+.Next + img{
+  position: absolute;
+  z-index: -1;
+  transform: translate(50em, -10em);
+}
