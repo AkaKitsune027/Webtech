@@ -1,11 +1,11 @@
 /* --------------- BASIC SETTING PAGES ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Athiti&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
 
 body {
   width: 70vw;
   height: 70vh;
   margin: 0;
-  font-family: "'Athiti', sans-serif, Franklin Gothic Medium", "Arial Narrow";
+  font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
   overflow: hidden visible;
   background-color: #2a2927;
   font-size: 1.2vw;
@@ -115,7 +115,7 @@ h2 {
   margin-top: 12%;
   overflow-y: auto;
   overflow-x: hidden;
-  width: 70vw;
+  width: 75vw;
   height: 70%;
 
 }
@@ -125,7 +125,7 @@ h3#memo1 {
   margin-left: 5em;
   text-align: left;
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar {
@@ -147,8 +147,7 @@ h3#memo1 {
 .Back {
   text-align: center;
   transform: translate(-40em, 27em);
-  width: 10%;
-  height: 20%;
+  width: 5%;
 }
 
 .Back a:link,a:visited{
@@ -156,7 +155,6 @@ h3#memo1 {
   background-color: rgb(255, 162, 12);
   font-size: 1.8em;
   font-weight: 600;
-  height: 10%;
   border-radius: 15%;
   box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
 }
