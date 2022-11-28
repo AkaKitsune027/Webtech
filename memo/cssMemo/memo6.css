@@ -6,7 +6,7 @@ body {
   height: 70vh;
   margin: 0;
   font-family: "Athiti", sans-serif, "Franklin Gothic Medium", "Arial Narrow";
-  overflow: visible;
+  overflow: hidden visible;
   background-color: #2a2927;
   font-size: 1.2vw;
   font-weight: 600;
@@ -103,11 +103,12 @@ h1 {
 h2 {
   color: rgb(76, 40, 40);
   text-align: center;
+  transform: translate(2em, -0em);
 }
 
 .content > h3 {
   overflow-y: auto;
-  width: 85%;
+  width: 95%;
   height: 70%;
 }
 
@@ -121,19 +122,16 @@ h3#memo6 {
 
 ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.555);
-  border-radius: 5%;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(112, 64, 64);
-  width: 10%;
-  height: 50%;
+  border-radius: 10px;
 }
-
 .Back {
   text-align: center;
   transform: translate(-0.3em, 1.4em);
@@ -141,9 +139,9 @@ h3#memo6 {
 }
 
 .Back a:link,
-a:visited {
-  color: rgb(197, 98, 45);
-  background-color: rgb(255, 162, 12);
+.Back a:visited {
+  color: rgb(69, 26, 26);
+  background-color: rgb(138, 30, 30);
   font-size: 1.8em;
   font-weight: 600;
   border-radius: 15%;
@@ -151,10 +149,9 @@ a:visited {
 }
 
 .Back a:hover {
-  color: rgb(0, 111, 185);
-  background-color: rgb(215, 215, 250);
+  color: rgb(32, 32, 32);
+  background-color: rgb(67, 65, 65);
 }
-
 .Next {
   text-align: center;
   transform: translate(37.5em, -1.5em);

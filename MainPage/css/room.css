@@ -43,6 +43,19 @@ body {
   display: flex;
   justify-content: center;
 }
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 64, 64);
+  border-radius: 10px;
+}
 /* --------------- MENU --------------- */
 
 nav#room {

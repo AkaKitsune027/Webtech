@@ -143,7 +143,7 @@ h3#memo1 {
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(112, 64, 64);
-  border-radius: 24%;
+  border-radius: 10px;
 }
 
 .Back {
@@ -154,8 +154,8 @@ h3#memo1 {
 
 .Back a:link,
 a:visited {
-  color: rgb(197, 98, 45);
-  background-color: rgb(255, 162, 12);
+  color: rgb(69, 26, 26);
+  background-color: rgb(138, 30, 30);
   font-size: 1.8em;
   font-weight: 600;
   border-radius: 15%;
@@ -163,6 +163,6 @@ a:visited {
 }
 
 .Back a:hover {
-  color: rgb(0, 111, 185);
-  background-color: rgb(215, 215, 250);
+  color: rgb(32, 32, 32);
+  background-color: rgb(67, 65, 65);
 }
