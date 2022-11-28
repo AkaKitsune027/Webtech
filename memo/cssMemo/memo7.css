@@ -1,0 +1,176 @@
+/* --------------- BASIC SETTING PAGES ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Athiti&display=swap");
+
+body {
+  width: 70vw;
+  height: 70vh;
+  margin: 0;
+  font-family: "Athiti", sans-serif, "Franklin Gothic Medium", "Arial Narrow";
+  overflow: hidden visible;
+  background-color: #2a2927;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr, 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 2;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ---------------- MENU ---------------- */
+
+nav#memo7 {
+  margin-top: 2vw;
+}
+
+nav#memo7 li {
+  display: inline;
+}
+
+nav#memo7 li,
+a {
+  padding: 1vh;
+  width: 10vw;
+  height: 10vh;
+  border-radius: 20%;
+  text-decoration: none;
+  color: black;
+  text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+  text-align: center;
+}
+
+nav#memo7 a:is(:link, :visited) {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  background-color: #dce4e6;
+  text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
+  transition: 0.25s;
+}
+
+nav#memo7 li,
+a:active {
+  transform: scale(0.8);
+}
+nav#memo7 a {
+  box-shadow: rgb(170, 181, 102) 0.1em 0.4em 0.6em;
+}
+
+nav#memo7 a:hover {
+  color: rgb(220, 217, 240);
+  background-color: black;
+}
+
+/* --------------- Memo7 ---------------- */
+
+#whitepaperMemo7 {
+  display: flex;
+  width: 50vw;
+  height: 70vh;
+  background-color: rgb(180, 144, 99);
+  box-shadow: #6e6e69 0.5em 0.5em 0.8em;
+  border-radius: 20%;
+  margin-left: 0em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(166, 144, 64);
+  text-shadow: 0em 0em 0.4em #786f5d;
+}
+
+h2 {
+  color: rgb(76, 40, 40);
+  text-align: center;
+  transform: translate(2em, -0em);
+}
+
+.content > h3 {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 95%;
+  height: 70%;
+}
+
+h3#memo7 {
+  background-color: transparent;
+  margin-left: 5em;
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 64, 64);
+  border-radius: 10px;
+}
+.Back {
+  text-align: center;
+  transform: translate(-0.3em, 1.4em);
+  width: 5%;
+}
+
+.Back a:link,
+.Back a:visited {
+  color: rgb(69, 26, 26);
+  background-color: rgb(138, 30, 30);
+  font-size: 1.8em;
+  font-weight: 600;
+  border-radius: 15%;
+  box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
+}
+
+.Back a:hover {
+  color: rgb(32, 32, 32);
+  background-color: rgb(67, 65, 65);
+}
+
+.Next {
+  text-align: center;
+  transform: translate(37.5em, -1.5em);
+  width: 5%;
+}
+
+.Next a:link,
+a:visited {
+  color: rgb(197, 98, 45);
+  background-color: rgb(255, 162, 12);
+  font-size: 1.8em;
+  font-weight: 600;
+  border-radius: 15%;
+  box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
+}
+
+.Next a:hover {
+  color: rgb(0, 111, 185);
+  background-color: rgb(215, 215, 250);
+}

@@ -1,0 +1,153 @@
+/* --------------- BASIC SETTING PAGES ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+
+
+body {
+  width: 70vw;
+  height: 70vh;
+  margin: 0;
+  font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
+  font-weight: 600;
+  overflow: visible;
+  background-color: #2a2927;
+  font-size: 1.2vw;
+}
+
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr repeat(1, 3fr) 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 2;
+}
+.div3 {
+  grid-area: 3 / 2 / 4 / 2;
+  background-color: #3f6cac;
+  width: 50%;
+  height: 20%;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 64, 64);
+  border-radius: 10px;
+}
+
+/* ---------------- MENU ---------------- */
+
+nav#mood {
+    margin-top: 2vw;
+  }
+
+nav#mood li {
+    display: inline;
+  }
+  
+  nav#mood li,a{
+    padding: 2vh;
+    border-radius: 20%;
+    text-decoration: none;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 1px 1px 5px;
+    text-align: center;
+  }
+  
+  nav#mood 
+  a:is(:link, :visited) {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    background-color: #dce4e6;
+    text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
+    transition: 0.25s;
+  }
+  
+  nav#mood li,a:active {
+    transform: scale(0.8);
+  }
+  nav#mood a{
+  box-shadow: rgb(68, 44, 146) 0.1em 0.4em 0.6em;
+  }
+
+  nav#mood a:hover {
+    color:  rgb(220, 217, 240);;
+    background-color: black;
+  }
+
+
+
+/* --------------- MOOD ---------------- */
+
+
+#whitepaperMood{
+    display: flex;
+    width: 70vw;
+    height: 75vh;
+    background-color: rgb(117, 120, 153);
+    box-shadow: #153563 0.5em 0.5em 0.8em;
+    border-radius: 20%;
+    margin-left: 0em;
+    margin-bottom: 1em;
+}
+
+.div2 > h2 {
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(99, 75, 208);
+    text-shadow: 0em 0em 0.3em rgb(13, 0, 70);
+}
+
+.moonMood{
+    width: 70vw;
+    height: auto;
+}
+
+.moonMood > h2{
+    margin-top: 1.1em;
+    color: rgb(41, 22, 180);
+    text-shadow: #a5b6cd 0em 0em 0.2em;
+    text-align: left;
+    font-size: 1.5vw;
+    transform: translate(16em, -0.5em);
+}
+
+.square{
+    width: 1.2em;
+    height: 1.2em;
+    padding-bottom: 1%;
+    background-color: rgba(219, 170, 47, 0.632);
+    border-radius: 25%;
+    box-shadow: 0.3em 0.3em 0.2em #455d80;
+    font-size: 2.1em;
+    color: rgb(155, 67, 0);
+    text-shadow: 0em 0em 0.1em rgb(255, 233, 200);
+    text-align: center;
+    transform: translate(12.2em, -0.5em);
+}
+
