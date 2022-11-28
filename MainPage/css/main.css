@@ -1,10 +1,12 @@
 /* --------------- BASIC SETTING PAGES ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
 
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
+  font-weight: 600;
   overflow: visible;
   background-color: #2a2927;
   display: block;

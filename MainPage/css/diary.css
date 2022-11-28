@@ -5,7 +5,8 @@ body {
     width: 70vw;
     height: 70vh;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
+    font-weight: 600;
     overflow: hidden visible;
     background-color: #2a2927;
 }
@@ -92,7 +93,7 @@ nav#diary a:hover {
 .collection {
     z-index: -1; 
     width: 100vw;
-    height: fit-content;
+    height: 175vh;
     background-color: rgba(168, 151, 129, 0.701);
     padding: 5% 5% 5% 0%;
 }
@@ -123,7 +124,7 @@ nav#diary a:hover {
 
 .more {
     color: rgb(66, 21, 0);
-    transform: translate(40%, 250%);
+    transform: translate(30%, 150%);
 }
 
 #memo10 {

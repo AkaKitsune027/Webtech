@@ -5,7 +5,7 @@ body {
   width: 70vw;
   height: 70vh;
   margin: 0;
-  font-family: "'Athiti', sans-serif, Franklin Gothic Medium", "Arial Narrow";
+  font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
   overflow: visible;
   background-color: #2a2927;
   font-size: 1.2vw;
@@ -20,10 +20,11 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr repeat(1, 3fr) 1fr;
+  grid-template-rows: 3fr, 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
 
 .div1 {
   grid-area: 1 / 2 / 2 / 2;
@@ -31,9 +32,7 @@ body {
 .div2 {
   grid-area: 2 / 2 / 3 / 2;
 }
-.div3 {
-  grid-area: 3 / 2 / 4 / 2;
-}
+
 
 .box {
   width: 100vw;
@@ -83,7 +82,7 @@ nav#memo7 a:hover {
   background-color: black;
 }
 
-/* --------------- Memo1 ---------------- */
+/* --------------- Memo7 ---------------- */
 
 #whitepaperMemo7 {
   display: flex;
@@ -110,6 +109,7 @@ h2 {
 .content > h3 {
 
   overflow-y: auto;
+  overflow-x: hidden;
   width: 85%;
   height: 70%;
 
@@ -140,24 +140,43 @@ h3#memo7 {
 
 
 
+.Back {
+  text-align: center;
+  transform: translate(-0.3em, 1.4em);
+  width: 5%;
+}
+
 .Back a:link,a:visited{
+  color:rgb(197, 98, 45);
+  background-color: rgb(255, 162, 12);
+  font-size: 1.8em;
+  font-weight: 600;
+  border-radius: 15%;
+  box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
+}
+  
+  .Back a:hover{
     color: rgb(0, 111, 185);
-    font-size: 2.5em;
-    font-weight: 600;
-    transform: translate(10em, 11em);
+    background-color: rgb(215, 215, 250);
   }
-  
-  .Back a:hover{color:rgb(197, 98, 45);
+
+  .Next {
+    text-align: center;
+    transform: translate(37.5em, -1.5em);
+    width: 5%;
   }
-  
   
   .Next a:link,a:visited{
-    color: rgb(0, 111, 185);
-    font-size: 2.5em;
+    color:rgb(197, 98, 45);
+    background-color: rgb(255, 162, 12);
+    font-size: 1.8em;
     font-weight: 600;
-    transform: translate(5em, -10em);
+    border-radius: 15%;
+    box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
   }
-  
-  .Next a:hover{color:rgb(197, 98, 45);
-  }
-  
+    
+    
+    .Next a:hover{
+      color: rgb(0, 111, 185);
+      background-color: rgb(215, 215, 250);
+    }
