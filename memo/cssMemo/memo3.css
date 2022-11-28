@@ -32,9 +32,6 @@ body {
 .div2 {
   grid-area: 2 / 2 / 3 / 2;
 }
-.div3 {
-  grid-area: 3 / 2 / 4 / 2;
-}
 
 .box {
   width: 100vw;

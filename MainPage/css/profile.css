@@ -23,7 +23,7 @@ body {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: /*1, 3fr,*/ 1, 1fr;
+    grid-template-rows: 1, 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -142,6 +142,4 @@ h3 {
 .social {
     transform: translate(70%, -200%);
 }
-.social a {
-    /* text-decoration: none; */
-}
+

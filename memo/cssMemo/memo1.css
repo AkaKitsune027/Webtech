@@ -108,7 +108,7 @@ h1 {
 h2 {
   color: rgb(76, 40, 40);
   text-align: center;
-  transform: translate(1em, 0em);
+  transform: translate(2em, -1em);
 }
 
 .content {
@@ -116,6 +116,12 @@ h2 {
   overflow-y: auto;
   overflow-x: hidden;
   width: 75vw;
+  height: 70%;
+}
+
+.content > h3 {
+  overflow-y: auto;
+  width: 95%;
   height: 70%;
 }
 

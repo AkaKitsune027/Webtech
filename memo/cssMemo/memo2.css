@@ -98,6 +98,7 @@ nav#memo2 a:hover {
   background-color: rgb(180, 144, 99);
   box-shadow: #6e6e69 0.5em 0.5em 0.8em;
   border-radius: 20%;
+  
 }
 
 h1 {
@@ -111,11 +112,13 @@ h1 {
 h2 {
   color: rgb(76, 40, 40);
   text-align: center;
+  transform: translate(2em, -1em);
+  margin-top: 2em;
 }
 
 .content > h3 {
   overflow-y: auto;
-  width: 85%;
+  width: 95%;
   height: 70%;
 }
 
@@ -181,3 +184,9 @@ a:visited {
   color: rgb(0, 111, 185);
   background-color: rgb(215, 215, 250);
 }
+
+/* .song > img{
+  transform:translate(5em, 1.3em); 
+  width:40%; 
+  height:auto; 
+} */
