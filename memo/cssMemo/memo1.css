@@ -6,7 +6,7 @@ body {
   height: 70vh;
   margin: 0;
   font-family: "'Athiti', sans-serif, Franklin Gothic Medium", "Arial Narrow";
-  overflow: visible;
+  overflow: hidden visible;
   background-color: #2a2927;
   font-size: 1.2vw;
 }
@@ -19,21 +19,22 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr repeat(1, 3fr) 1fr;
+  grid-template-columns:  1fr;
+  grid-template-rows: 1fr, 2fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-.div1 {
-  grid-area: 1 / 2 / 2 / 2;
+.div1 { 
+  grid-area: 1 / 1 / 2 / 2; 
 }
-.div2 {
-  grid-area: 2 / 2 / 3 / 2;
+.div2 { 
+  display: flex;
+  justify-content: center;
 }
-.div3 {
+/* .div3 {
   grid-area: 3 / 2 / 4 / 2;
-}
+} */
 
 .box {
   width: 100vw;
@@ -86,13 +87,14 @@ nav#memo1 a:hover {
 
 #whitepaperMemo1 {
   display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  margin-right: 10em;
   width: 50vw;
   height: 70vh;
   background-color: rgb(180, 144, 99);
   box-shadow: #6e6e69 0.5em 0.5em 0.8em;
   border-radius: 20%;
-  margin-left: 0em;
-  margin-bottom: 1em;
 }
 
 h1 {
@@ -100,16 +102,19 @@ h1 {
   text-align: center;
   color: rgb(166, 144, 64);
   text-shadow: 0em 0em 0.4em #786f5d;
+  transform: translate(12em,0em);
 }
 
 h2 {
   color: rgb(76, 40, 40);
   text-align: center;
+  transform: translate(1em,0em);
 }
 
 .content  {
   margin-top: 12%;
   overflow-y: auto;
+  overflow-x: hidden;
   width: 70vw;
   height: 70%;
 
@@ -125,29 +130,32 @@ h3#memo1 {
 
 ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.555);
-  border-radius: 5%;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
+  background-color: transparent
+  
+
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(112, 64, 64);
+  border-radius: 24%;
+
 }
 
 .Back {
   text-align: center;
-  transform: translate(-40em, 30em);
+  transform: translate(-40em, 27em);
   width: 10%;
+  height: 20%;
 }
 
 .Back a:link,a:visited{
   color:rgb(197, 98, 45);
   background-color: rgb(255, 162, 12);
-    font-size: 1.8em;
-    font-weight: 600;
- 
+  font-size: 1.8em;
+  font-weight: 600;
   height: 10%;
   border-radius: 15%;
   box-shadow: 0.2em 0.2em 1em rgb(23, 22, 19);
