@@ -34,7 +34,7 @@ body {
   grid-area: 2 / 1 / 3 / 2;
 }
 .div2 {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 2  / 2;
 }
 
 .box {
@@ -86,7 +86,6 @@ nav#room li a {
 
 nav#room li,
 a:is(:link, :visited) {
-  text-decoration: none;
   color: rgb(48, 48, 48);
   background-color: #dce4e6;
   text-shadow: rgba(0, 0, 0, 0.555) 1px 1px 5px;
@@ -110,7 +109,7 @@ a:active {
   height: 75vh;
   background-color: rgb(187, 199, 255);
   border-radius: 20%;
-  margin-left: 5em;
+  margin-left: 1.5em;
   display: flex;
 }
 
@@ -118,42 +117,32 @@ a:active {
 .circle2,
 .circle3 {
   margin: auto;
-  width: 18vw;
-  height: 17vw;
-  border-radius: 50%;
   text-align: center;
 }
 
-h3.text1, h3.text2, h3.text3 {
+h3.text1 a, h3.text2 a, h3.text3 a {
   font-size: 1.5vw;
   margin-top: 3.7em; 
+  padding: 3.5em;
+  border-radius: 50%;
 }
 
 h3.text1 a {
   color: black;
   text-decoration: none;
-  transition: all 0.4 ease-in-out;
   background-color: rgb(0, 135, 212);
-  padding: 3.5em;
-  border-radius: 50%;
 }
 
 h3.text2 a {
   color: black;
   text-decoration: none;
-  transition: all 0.4 ease-in-out;
   background-color: rgb(204, 150, 0);
-  padding: 3.5em;
-  border-radius: 50%;
 }
 
 h3.text3 a {
   color: black;
   text-decoration: none;
-  transition: all 0.4 ease-in-out;
   background-color: rgb(170, 1, 1);
-  padding: 3.5em;
-  border-radius: 50%;
 }
 
 h3.text1 a:hover, 

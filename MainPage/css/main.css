@@ -7,9 +7,8 @@ body {
   margin: 0;
   font-family: 'Athiti', sans-serif, "Franklin Gothic Medium", "Arial Narrow";
   font-weight: 600;
-  overflow: visible;
   background-color: #2a2927;
-  display: block;
+  /* display: block; */
 }
 
 .container {
@@ -45,7 +44,7 @@ body {
 
 
   .div1 img {
-    margin: auto;
+    /* margin: auto; */
   }
 
   .div1 h2 {

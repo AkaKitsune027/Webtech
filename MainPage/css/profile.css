@@ -113,11 +113,9 @@ h1 {
     text-align: left;
     background-color: rgba(134, 126, 255, 0.353);
     border-radius: 15%;
-    justify-content: center;
     padding: 1em;
     width: 55vw;
     height: 35vw;
-    
     
     position: relative;
     animation: mymove 5s infinite alternate;
@@ -127,7 +125,7 @@ h1 {
 @keyframes mymove {
     from {top: 0px;
     }
-    to {top: 10px;
+    to {top: 5px;
     }
     
 }

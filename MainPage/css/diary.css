@@ -96,19 +96,19 @@ nav#diary a:hover {
 
 /* --------------- MEMO ---------------- */
 
-.collection > h1 {
-    margin-bottom: 4%;
-    color: orange;
-    text-shadow: 0.1em 0.1em 0.3em #2a2927;
-    text-align: center;
-}
-
 .collection {
     z-index: -1; 
     width: 100vw;
     height: 175vh;
     background-color: rgba(168, 151, 129, 0.701);
     padding: 5% 5% 5% 0%;
+}
+
+.collection > h1 {
+    margin-bottom: 4%;
+    color: orange;
+    text-shadow: 0.1em 0.1em 0.3em #2a2927;
+    text-align: center;
 }
 
 .allMemo {
@@ -118,11 +118,9 @@ nav#diary a:hover {
     flex-wrap: wrap;
     gap: 2.5em;
     justify-content: center;
-    align-items: center;
 }
 
 .allMemo > a {
-    display: flex;
     width: calc(30% - 2.5em);
     height: 30%;
     text-decoration: none;
